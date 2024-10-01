@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { primaryColor } from './src/includes/variable.js';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Tasks from './src/components/TodoTasks';
+import TodoTasks from './src/components/TodoTasks';
 import Form from './src/components/Form'
 import { StyleSheet } from "react-native";
 
@@ -65,7 +65,7 @@ export default function App() {
           }
         }}>
           { (props) => (
-            <Tasks 
+            <TodoTasks 
             {...props}
             tasks={tasks}
             onStatusChange={handleStatusChange}
